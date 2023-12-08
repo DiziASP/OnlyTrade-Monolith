@@ -1,0 +1,42 @@
+version: "3.8"
+
+services:
+  app:
+    hostname: app-monolith
+    build:
+      context: .
+      dockerfile: docker/Dockerfile
+    ports:
+      - "8001:80"
+      - "9443:443"
+    volumes:
+      - ./:/var/www/html
+    depends_on:
+      - mariadb
+  mariadb:
+    hostname: mariadb-monolith
+    image: mariadb:10.5
+    ports:
+      - "3306:3306"
+    environment:
+      ALLOW_EMPTY_PASSWORD: 1
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: cigniter4_monolith
+      MYSQL_USER: mysql
+      MYSQL_PASSWORD: mysql
+    volumes:
+      - ./mariadb/mysql:/var/lib/mysql
+      - ./mariadb/logs/mysql:/var/log/mysql
+  phpmyadmin:
+    hostname: phpmyadmin-monolith
+    image: phpmyadmin:latest
+    ports:
+      - "8181:80"
+    environment:
+      PMA_HOST: mariadb-monolith
+      PMA_PORT: 3306
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_USER: mysql
+      MYSQL_PASSWORD: mysql
+    depends_on:
+      - mariadb
