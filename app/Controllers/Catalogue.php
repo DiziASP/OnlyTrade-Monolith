@@ -2,10 +2,10 @@
 
 namespace App\Controllers;
 
-class Katalog extends BaseController
+class Catalogue extends BaseController
 {
     public function index(): string
     {
-        return view('katalog');
+        return view('catalogue');
     }
 }

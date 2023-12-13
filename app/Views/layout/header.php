@@ -10,7 +10,7 @@
                 <div class="col-md-3">
                     <div class="header-logo">
                         <a href="#" class="logo">
-                            <img src="<?php echo base_url()?>/template/img/logo.png" alt="">
+                            <img src="<?php echo base_url()?>/template/img/logoOnlyTrade.png" alt="">
                         </a>
                     </div>
                 </div>
@@ -38,7 +38,7 @@
                         <!-- Account -->
                         <div class="dropdown">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="true">
-            <i class="fa fa-user-o"></i> 
+                                <i class="fa fa-user-o"></i> 
                                 <span>My Account</span>
                             </a>
                             <div class="cart-dropdown">

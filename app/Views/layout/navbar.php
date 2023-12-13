@@ -6,8 +6,8 @@
         <div id="responsive-nav">
             <!-- NAV -->
             <ul class="main-nav nav navbar-nav">
-                <li class="active"><a href="#">Katalog</a></li>
-                <li><a href="#">Riwayat</a></li>
+                <li class="active"><a href="#">Catalogue</a></li>
+                <li><a href="#">History</a></li>
                 <li><a href="#">Dashboard</a></li>
             </ul>
             <!-- /NAV -->
