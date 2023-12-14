@@ -1,19 +1,21 @@
-<!-- NAVIGATION -->
-<nav id="navigation">
-    <!-- container -->
-    <div class="container">
-        <!-- responsive-nav -->
-        <div id="responsive-nav">
-            <!-- NAV -->
-            <ul class="main-nav nav navbar-nav">
-                <li class="active"><a href="#">Catalogue</a></li>
-                <li><a href="#">History</a></li>
-                <li><a href="#">Dashboard</a></li>
-            </ul>
-            <!-- /NAV -->
+<?php if ($this->data['template'] == 'catalogue' || $this->data['template'] == 'history' || $this->data['template'] == 'dashboard') : ?>
+    <!-- NAVIGATION -->
+    <nav id="navigation">
+        <!-- container -->
+        <div class="container">
+            <!-- responsive-nav -->
+            <div id="responsive-nav">
+                <!-- NAV -->
+                <ul class="main-nav nav navbar-nav">
+                    <li class="active"><a href="#">Catalogue</a></li>
+                    <li><a href="#">History</a></li>
+                    <li><a href="#">Dashboard</a></li>
+                </ul>
+                <!-- /NAV -->
+            </div>
+            <!-- /responsive-nav -->
         </div>
-        <!-- /responsive-nav -->
-    </div>
-    <!-- /container -->
-</nav>
-<!-- /NAVIGATION -->
+        <!-- /container -->
+    </nav>
+    <!-- /NAVIGATION -->
+<?php endif; ?>

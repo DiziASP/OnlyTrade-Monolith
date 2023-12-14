@@ -6,6 +6,7 @@ class Catalogue extends BaseController
 {
     public function index(): string
     {
-        return view('catalogue');
+        $data['template'] = 'catalogue';
+        return view('catalogue', $data);
     }
 }

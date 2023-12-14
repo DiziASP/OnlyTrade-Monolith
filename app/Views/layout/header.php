@@ -37,9 +37,9 @@
                     <div class="header-ctn">
                         <!-- Account -->
                         <div class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="true">
+                            <a href="/Login">
                                 <i class="fa fa-user-o"></i> 
-                                <span>My Account</span>
+                                <span>Login</span>
                             </a>
                         </div>
                         <!-- /Account -->
