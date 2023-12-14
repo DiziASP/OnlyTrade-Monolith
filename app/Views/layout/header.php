@@ -9,7 +9,7 @@
                 <!-- LOGO -->
                 <div class="col-md-3">
                     <div class="header-logo">
-                        <a href="#" class="logo">
+                        <a href="/" class="logo">
                             <img src="<?php echo base_url()?>/template/img/logoOnlyTrade.png" alt="">
                         </a>
                     </div>

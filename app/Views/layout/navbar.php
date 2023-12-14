@@ -7,9 +7,15 @@
             <div id="responsive-nav">
                 <!-- NAV -->
                 <ul class="main-nav nav navbar-nav">
-                    <li class="active"><a href="#">Catalogue</a></li>
-                    <li><a href="#">History</a></li>
-                    <li><a href="#">Dashboard</a></li>
+                    <li <?php echo ($this->data['template'] == 'catalogue') ? 'class="active"' : ''; ?>>
+                        <a href="/">Catalogue</a>
+                    </li>
+                    <li <?php echo ($this->data['template'] == 'history') ? 'class="active"' : ''; ?>>
+                        <a href="/history">History</a>
+                    </li>
+                    <li <?php echo ($this->data['template'] == 'dashboard') ? 'class="active"' : ''; ?>>
+                        <a href="/dashboard">Dashboard</a>
+                    </li>
                 </ul>
                 <!-- /NAV -->
             </div>

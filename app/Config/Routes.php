@@ -7,3 +7,4 @@ use CodeIgniter\Router\RouteCollection;
  */
 $routes->get('/', 'Catalogue::index');
 $routes->get('/detail', 'Detail::index');
+$routes->get('/history', 'History::index');
