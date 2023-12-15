@@ -35,4 +35,35 @@ class Catalogue extends BaseController
 
         return view('detail', ['data' => $data]);
     }
+
+    public function buyAction()
+    {
+        helper('http');
+        $data = [
+            'id' => $this->request->getVar('id'),
+            'amount' => $this->request->getVar('amount'),
+        ];
+
+        // Get data first
+        $response = http_request('https://onlytrade-single-service-production.up.railway.app/api/barang/' . $data['id'], null, null, "GET");
+        $barang = $response['data'];
+
+        // Check if amount is valid
+        if ($data['amount'] > $barang['stock']) {
+            return redirect()->to("/detail/" . $data['id']);
+        }
+
+        // Update stock
+        $stock = $barang['stock'] - $data['amount'];
+        $req = [
+            'name' => $barang['name'],
+            'stock' => $stock,
+            'price' => $barang['price'],
+            'perusahaan_id' => $barang['perusahaan_id'],
+        ];
+
+        $response = http_request('https://onlytrade-single-service-production.up.railway.app/api/barang/' . $data['id'], null, $req, "PUT");
+
+        // return redirect()->to('/');
+    }
 }
