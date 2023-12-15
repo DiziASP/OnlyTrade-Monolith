@@ -37,21 +37,18 @@
             <!-- Product details -->
             <div class="col-md-5">
                 <div class="product-details">
+                    <p class="product-category">Stok : 10</p>
                     <h2 class="product-name">product name goes here</h2>
                     <div>
                         <h3 class="product-price">$980.00</h3>
                     </div>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    <p>Perusahaan</p>
+                    <p>Alamat</p>
+                    <p>No. Telepon</p>
 
                     <div class="add-to-cart">
                         <button class="add-to-cart-btn"><i class="fa fa-shopping-cart"></i> buy</button>
                     </div>
-
-                    <ul class="product-links">
-                        <li>Category:</li>
-                        <li><a href="#">Category xyz</a></li>
-                    </ul>
-
                 </div>
             </div>
             <!-- /Product details -->

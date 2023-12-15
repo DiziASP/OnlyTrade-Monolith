@@ -19,13 +19,8 @@
                 <!-- SEARCH BAR -->
                 <div class="col-md-6">
                     <div class="header-search">
-                        <form>
-                            <select class="input-select">
-                                <option value="0">All Categories</option>
-                                <option value="1">Category 01</option>
-                                <option value="1">Category 02</option>
-                            </select>
-                            <input class="input" placeholder="Search here">
+                        <form style="width: 100%; display: flex; justify-content: center;">
+                            <input class="input" placeholder="Search here" style="border-radius: 40px 0px 0px 40px;">
                             <button class="search-btn" style="background-color: #dc3545">Search</button>
                         </form>
                     </div>

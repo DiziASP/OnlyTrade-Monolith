@@ -16,73 +16,19 @@
 						<div id="tab1" class="tab-pane active">
 							<div class="products-slick" data-nav="#slick-nav-1">
 								<!-- product -->
-								<div class="product">
-									<div class="product-img">
-										<img src="<?php echo base_url()?>/template/img/product01.png" alt="">
+								<?php foreach ($riwayatBarang as $rb): ?>
+									<div class="product">
+										<div class="product-img">
+											<img src="<?php echo base_url()?>/template/img/product01.png" alt="">
+										</div>
+										<div class="product-body">
+											<p class="product-category">-- Purchased on <?= $rb['tanggalBeli']; ?> --</p>
+											<h3 class="product-name"><a href="#"><?= $rb['namaBarang']; ?></a></h3>
+											<h4 class="product-price">Rp<?= $rb['hargaBarang']; ?></h4>
+											<p class="product-category"><?= $rb['perusahaanBarang']; ?></p>
+										</div>
 									</div>
-									<div class="product-body">
-										<p class="product-category">-- Purchased on 02/04/2023 --</p>
-										<p class="product-category">Category</p>
-										<h3 class="product-name"><a href="#">product name goes here</a></h3>
-										<h4 class="product-price">$980.00</h4>
-									</div>
-								</div>
-								<!-- /product -->
-								
-								<!-- product -->
-								<div class="product">
-									<div class="product-img">
-										<img src="<?php echo base_url()?>/template/img/product01.png" alt="">
-									</div>
-									<div class="product-body">
-										<p class="product-category">-- Purchased on 02/04/2023 --</p>
-										<p class="product-category">Category</p>
-										<h3 class="product-name"><a href="#">product name goes here</a></h3>
-										<h4 class="product-price">$980.00</h4>
-									</div>
-								</div>
-								<!-- /product -->
-								
-								<!-- product -->
-								<div class="product">
-									<div class="product-img">
-										<img src="<?php echo base_url()?>/template/img/product01.png" alt="">
-									</div>
-									<div class="product-body">
-										<p class="product-category">-- Purchased on 02/04/2023 --</p>
-										<p class="product-category">Category</p>
-										<h3 class="product-name"><a href="#">product name goes here</a></h3>
-										<h4 class="product-price">$980.00</h4>
-									</div>
-								</div>
-								<!-- /product -->
-
-								<!-- product -->
-								<div class="product">
-									<div class="product-img">
-										<img src="<?php echo base_url()?>/template/img/product01.png" alt="">
-									</div>
-									<div class="product-body">
-										<p class="product-category">-- Purchased on 02/04/2023 --</p>
-										<p class="product-category">Category</p>
-										<h3 class="product-name"><a href="#">product name goes here</a></h3>
-										<h4 class="product-price">$980.00</h4>
-									</div>
-								</div>
-								<!-- /product -->
-								
-								<!-- product -->
-								<div class="product">
-									<div class="product-img">
-										<img src="<?php echo base_url()?>/template/img/product01.png" alt="">
-									</div>
-									<div class="product-body">
-										<p class="product-category">-- Purchased on 02/04/2023 --</p>
-										<p class="product-category">Category</p>
-										<h3 class="product-name"><a href="#">product name goes here</a></h3>
-										<h4 class="product-price">$980.00</h4>
-									</div>
-								</div>
+								<?php endforeach; ?>
 								<!-- /product -->
 							</div>
 							<div id="slick-nav-1" class="products-slick-nav"></div>
