@@ -25,7 +25,7 @@
                                     <p class="product-category"><?= $b['perusahaanBarang']; ?></p>
                                 </div>
                                 <div class="add-to-cart">
-                                    <a href="/detail">
+                                    <a href="/detail/<?= $b['idBarang']; ?>">
                                         <button class="add-to-cart-btn"><i class="fa fa-shopping-cart"></i>Check Detail</button>
                                     </a>
                                 </div>
