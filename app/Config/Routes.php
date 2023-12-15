@@ -16,3 +16,4 @@ $routes->get('/', 'Catalogue::index', ['filter' => 'route']);
 $routes->get('/detail/(:any)', 'Catalogue::detail/$1', ['filter' => 'route']);
 $routes->get('/history', 'Catalogue::history', ['filter' => 'route']);
 $routes->post('/api/buy', 'Catalogue::buyAction', ['filter' => 'route']);
+$routes->get('/api/history', 'Catalogue::getHistory');

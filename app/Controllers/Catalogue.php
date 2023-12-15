@@ -74,4 +74,15 @@ class Catalogue extends BaseController
 
         return redirect()->to('/');
     }
+
+    public function getHistory()
+    {
+        $historyModel = new HistoryModel();
+
+
+        // get all history
+        $data = $historyModel->findAll();
+
+        return $this->response->setJSON($data);
+    }
 }
