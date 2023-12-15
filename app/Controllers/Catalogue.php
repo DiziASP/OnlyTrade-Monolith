@@ -9,6 +9,12 @@ class Catalogue extends BaseController
         helper('http');
         $response = http_request('https://onlytrade-single-service-production.up.railway.app/api/barang', null, null, "GET");
         $data = $response['data'];
+
+        // Add perusahaan
+        foreach ($data as $key => $value) {
+            $response = http_request('https://onlytrade-single-service-production.up.railway.app/api/perusahaan/' . $value['perusahaan_id'], null, null, "GET");
+            $data[$key]['perusahaan'] = $response['data']['nama'];
+        }
         return view('catalogue', ['data' => $data]);
     }
 

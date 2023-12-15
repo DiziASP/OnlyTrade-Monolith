@@ -7,7 +7,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 
-	<title>OnlyTrade</title>
+	<title>OnlyTrade | Online Marketplace</title>
 
 	<!-- Google font -->
 	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700" rel="stylesheet">
@@ -37,14 +37,38 @@
 
 </head>
 
-<body class="d-flex flex-column min-vh-100">
+<body class="d-flex flex-column">
 	<?= $this->include('layout/header'); ?>
 
 	<?= $this->include('layout/navbar'); ?>
 
 	<?= $this->renderSection('content'); ?>
 
-	<?= $this->include('layout/footer'); ?>
+
+	<!-- FOOTER -->
+	<footer id="footer" class="footer fixed-bottom">
+		<!-- bottom footer -->
+		<div id="bottom-footer" class="section">
+			<div class="container">
+				<!-- row -->
+				<div class="row">
+					<div class="col-md-12 text-center">
+						<span class="copyright">
+							<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+							Copyright &copy;<script>
+								document.write(new Date().getFullYear());
+							</script> All rights reserved | This website is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by OnlyTrade Fams
+							<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+						</span>
+					</div>
+				</div>
+				<!-- /row -->
+			</div>
+			<!-- /container -->
+		</div>
+		<!-- /bottom footer -->
+	</footer>
+	<!-- /FOOTER -->
 
 	<!-- jQuery Plugins -->
 	<script src="<?php echo base_url() ?>/template/js/jquery.min.js"></script>

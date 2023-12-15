@@ -47,3 +47,50 @@ in APPPATH/Views/catalogue.php on line 26.
  7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Catalogue))
  8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
  9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-15 12:08:35 --> Undefined array key "id_perusahaan"
+in APPPATH/Controllers/Catalogue.php on line 15.
+ 1 APPPATH/Controllers/Catalogue.php(15): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id_perusahaan"', '/var/www/html/app/Controllers/Catalogue.php', 15)
+ 2 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\Catalogue->index()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Catalogue))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-15 12:09:38 --> Array to string conversion
+in APPPATH/Views/catalogue.php on line 36.
+ 1 APPPATH/Views/catalogue.php(36): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', '/var/www/html/app/Views/catalogue.php', 36)
+ 2 SYSTEMPATH/View/View.php(228): include('/var/www/html/app/Views/catalogue.php')
+ 3 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1190): CodeIgniter\View\View->render('catalogue', [], true)
+ 5 APPPATH/Controllers/Catalogue.php(18): view('catalogue', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\Catalogue->index()
+ 7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Catalogue))
+ 8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-15 12:10:02 --> Undefined array key "name"
+in APPPATH/Controllers/Catalogue.php on line 16.
+ 1 APPPATH/Controllers/Catalogue.php(16): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "name"', '/var/www/html/app/Controllers/Catalogue.php', 16)
+ 2 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\Catalogue->index()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Catalogue))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-15 12:12:24 --> Undefined variable $transaksi
+in APPPATH/Views/history.php on line 23.
+ 1 APPPATH/Views/history.php(23): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $transaksi', '/var/www/html/app/Views/history.php', 23)
+ 2 SYSTEMPATH/View/View.php(228): include('/var/www/html/app/Views/history.php')
+ 3 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1190): CodeIgniter\View\View->render('history', [], true)
+ 5 APPPATH/Controllers/Catalogue.php(23): view('history')
+ 6 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\Catalogue->history()
+ 7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Catalogue))
+ 8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-15 12:14:11 --> Undefined variable $pager
+in APPPATH/Views/history.php on line 32.
+ 1 APPPATH/Views/history.php(32): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $pager', '/var/www/html/app/Views/history.php', 32)
+ 2 SYSTEMPATH/View/View.php(228): include('/var/www/html/app/Views/history.php')
+ 3 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1190): CodeIgniter\View\View->render('history', [], true)
+ 5 APPPATH/Controllers/Catalogue.php(23): view('history')
+ 6 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\Catalogue->history()
+ 7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Catalogue))
+ 8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()

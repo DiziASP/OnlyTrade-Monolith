@@ -7,21 +7,6 @@
 	<div class="container">
 		<!-- row -->
 		<div class="row">
-			<!-- SEARCH BAR -->
-			<div class="col-md-6">
-				<div class="header-search">
-					<form>
-						<select class="input-select">
-							<option value="0">All Categories</option>
-							<option value="1">Category 01</option>
-							<option value="1">Category 02</option>
-						</select>
-						<input class="input" placeholder="Search here">
-						<button class="search-btn">Search</button>
-					</form>
-				</div>
-			</div>
-			<!-- /SEARCH BAR -->
 
 			<!-- Products tab & slick -->
 			<div class="col-md-12">
@@ -38,7 +23,7 @@
 											<img src="<?php echo base_url() ?>/template/img/product01.png" alt="">
 										</div>
 										<div class="product-body text-truncate d-inline-block">
-											<p class="product-category"></p>
+											<p class="product-category"><?= $row['perusahaan'] ?></p>
 											<h3 class="product-name text-truncate"><?= $row['name'] ?></h3>
 											<h4 class="product-price">Rp <?= $row['price'] ?></h4>
 											<div class="product-rating">
