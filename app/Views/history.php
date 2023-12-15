@@ -13,20 +13,20 @@
                     <tr>
                         <th scope="col">No</th>
                         <th>Tanggal</th>
-                        <th>Nama</th>
                         <th>Jumlah</th>
                         <th>Total</th>
                     </tr>
                 </thead>
                 <tbody>
                     <?php $i = 1; ?>
-                    <tr>
-                        <th scope="row"><?= $i++; ?></th>
-                        <td>Tanggal</td>
-                        <td>Nama</td>
-                        <td>Jumlah</td>
-                        <td>Total</td>
-                    </tr>
+                    <?php foreach ($data as $key => $value) : ?>
+                        <tr>
+                            <th scope="row"><?= $i++; ?></th>
+                            <td><?= $value['created_at']; ?></td>
+                            <td><?= $value['amount']; ?></td>
+                            <td><?= $value['total']; ?></td>
+                        </tr>
+                    <?php endforeach; ?>
                 </tbody>
             </table>
         </div>

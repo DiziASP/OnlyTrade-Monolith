@@ -28,7 +28,7 @@
 
             <!-- Form -->
             <form method="post" action="/api/buy">
-                <input type="hidden" id="id" name="id" value="<?= $data['id'] ?>">
+                <input type="hidden" id="price" name="price" value="<?= $data['price'] ?>">
                 <input type="text" id="amount" name="amount" placeholder="<?= $data['stock'] ?>">
                 <button class="add-to-cart-btn" type="submit">Buy Now</button>
             </form>

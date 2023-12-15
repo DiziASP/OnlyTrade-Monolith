@@ -50,7 +50,7 @@ class Auth extends BaseController
             "sub" => "Subject of the JWT",
             "iat" => $iat, //Time the JWT issued at
             "exp" => $exp, // Expiration time of token
-            "email" => $user['email'],
+            "id" => $user['id'],
         );
 
         $token = JWT::encode($payload, $key, 'HS256');
@@ -60,7 +60,7 @@ class Auth extends BaseController
             'messages' => 'Login successfully',
             'data'     => [
                 'token' => $token,
-                'email' => $user['email'],
+                'id' => $user['id'],
             ],
         ];
 

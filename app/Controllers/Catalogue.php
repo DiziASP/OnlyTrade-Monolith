@@ -2,6 +2,11 @@
 
 namespace App\Controllers;
 
+use App\Models\HistoryModel;
+use App\Models\UserModel;
+use \Firebase\JWT\JWT;
+use Firebase\JWT\Key;
+
 class Catalogue extends BaseController
 {
     public function index()
@@ -18,9 +23,19 @@ class Catalogue extends BaseController
         return view('catalogue', ['data' => $data]);
     }
 
-    public function history(): string
+    public function history()
     {
-        return view('history');
+
+        $historyModel = new HistoryModel();
+
+        $key = getenv('JWT_SECRET');
+
+        $user = JWT::decode(session()->get('token'), new Key($key, 'HS256'));
+
+        // get all history
+        $data = $historyModel->where('user_id', $user->id)->findAll();
+
+        return view('history', ['data' => $data]);
     }
 
     public function detail($id)
@@ -39,31 +54,24 @@ class Catalogue extends BaseController
     public function buyAction()
     {
         helper('http');
+
+        $historyModel = new HistoryModel();
+
+        $amount = $this->request->getVar('amount');
+        $total = $this->request->getVar('price') * $amount;
+
+        $key = getenv('JWT_SECRET');
+
+        $user = JWT::decode(session()->get('token'), new Key($key, 'HS256'));
+
         $data = [
-            'id' => $this->request->getVar('id'),
-            'amount' => $this->request->getVar('amount'),
+            'user_id' => $user->id,
+            'amount' => $amount,
+            'total' => $total,
         ];
 
-        // Get data first
-        $response = http_request('https://onlytrade-single-service-production.up.railway.app/api/barang/' . $data['id'], null, null, "GET");
-        $barang = $response['data'];
+        $historyModel->insert($data);
 
-        // Check if amount is valid
-        if ($data['amount'] > $barang['stock']) {
-            return redirect()->to("/detail/" . $data['id']);
-        }
-
-        // Update stock
-        $stock = $barang['stock'] - $data['amount'];
-        $req = [
-            'name' => $barang['name'],
-            'stock' => $stock,
-            'price' => $barang['price'],
-            'perusahaan_id' => $barang['perusahaan_id'],
-        ];
-
-        $response = http_request('https://onlytrade-single-service-production.up.railway.app/api/barang/' . $data['id'], null, $req, "PUT");
-
-        // return redirect()->to('/');
+        return redirect()->to('/');
     }
 }
