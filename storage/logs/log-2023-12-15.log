@@ -94,3 +94,125 @@ in APPPATH/Views/history.php on line 32.
  7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Catalogue))
  8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
  9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-15 12:47:56 --> Undefined array key "id"
+in APPPATH/Views/catalogue.php on line 40.
+ 1 APPPATH/Views/catalogue.php(40): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id"', '/var/www/html/app/Views/catalogue.php', 40)
+ 2 SYSTEMPATH/View/View.php(228): include('/var/www/html/app/Views/catalogue.php')
+ 3 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1190): CodeIgniter\View\View->render('catalogue', [], true)
+ 5 APPPATH/Controllers/Catalogue.php(18): view('catalogue', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\Catalogue->index()
+ 7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Catalogue))
+ 8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-15 12:54:20 --> Undefined array key "data"
+in APPPATH/Controllers/Catalogue.php on line 30.
+ 1 APPPATH/Controllers/Catalogue.php(30): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "data"', '/var/www/html/app/Controllers/Catalogue.php', 30)
+ 2 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\Catalogue->detail('login')
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Catalogue))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-12-15 12:56:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-15 13:02:50 --> Undefined constant "CodeIgniter\Database\MySQLi\MYSQLI_STORE_RESULT"
+in SYSTEMPATH/Database/Database.php on line 137.
+ 1 SYSTEMPATH/Database/Database.php(55): CodeIgniter\Database\Database->initDriver('MySQLi', 'Connection', [...])
+ 2 SYSTEMPATH/Database/Config.php(83): CodeIgniter\Database\Database->load([...], 'default')
+ 3 SYSTEMPATH/Validation/StrictRules/Rules.php(199): CodeIgniter\Database\Config::connect('default')
+ 4 SYSTEMPATH/Validation/Validation.php(311): CodeIgniter\Validation\StrictRules\Rules->is_unique('dizi@gmail.com', 'email', [...], null, 'email')
+ 5 SYSTEMPATH/Validation/Validation.php(197): CodeIgniter\Validation\Validation->processRules('email', 'email', 'dizi@gmail.com', [...], [...])
+ 6 SYSTEMPATH/Controller.php(152): CodeIgniter\Validation\Validation->run()
+ 7 APPPATH/Controllers/Auth.php(82): CodeIgniter\Controller->validate([...])
+ 8 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\Auth->registerAction()
+ 9 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+10 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-15 13:04:23 --> Undefined constant "CodeIgniter\Database\MySQLi\MYSQLI_STORE_RESULT"
+in SYSTEMPATH/Database/Database.php on line 137.
+ 1 SYSTEMPATH/Database/Database.php(55): CodeIgniter\Database\Database->initDriver('MySQLi', 'Connection', [...])
+ 2 SYSTEMPATH/Database/Config.php(83): CodeIgniter\Database\Database->load([...], 'default')
+ 3 SYSTEMPATH/Validation/StrictRules/Rules.php(199): CodeIgniter\Database\Config::connect('default')
+ 4 SYSTEMPATH/Validation/Validation.php(311): CodeIgniter\Validation\StrictRules\Rules->is_unique('dizi@gmail.com', 'email', [...], null, 'email')
+ 5 SYSTEMPATH/Validation/Validation.php(197): CodeIgniter\Validation\Validation->processRules('email', 'email', 'dizi@gmail.com', [...], [...])
+ 6 SYSTEMPATH/Controller.php(152): CodeIgniter\Validation\Validation->run()
+ 7 APPPATH/Controllers/Auth.php(82): CodeIgniter\Controller->validate([...])
+ 8 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\Auth->registerAction()
+ 9 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+10 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-15 13:05:27 --> Undefined constant "CodeIgniter\Database\MySQLi\MYSQLI_STORE_RESULT"
+in SYSTEMPATH/Database/Database.php on line 137.
+ 1 SYSTEMPATH/Database/Database.php(55): CodeIgniter\Database\Database->initDriver('MySQLi', 'Connection', [...])
+ 2 SYSTEMPATH/Database/Config.php(83): CodeIgniter\Database\Database->load([...], 'default')
+ 3 SYSTEMPATH/Validation/StrictRules/Rules.php(199): CodeIgniter\Database\Config::connect('default')
+ 4 SYSTEMPATH/Validation/Validation.php(311): CodeIgniter\Validation\StrictRules\Rules->is_unique('dizi@gmail.com', 'email', [...], null, 'email')
+ 5 SYSTEMPATH/Validation/Validation.php(197): CodeIgniter\Validation\Validation->processRules('email', 'email', 'dizi@gmail.com', [...], [...])
+ 6 SYSTEMPATH/Controller.php(152): CodeIgniter\Validation\Validation->run()
+ 7 APPPATH/Controllers/Auth.php(82): CodeIgniter\Controller->validate([...])
+ 8 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\Auth->registerAction()
+ 9 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+10 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-15 13:06:48 --> Undefined constant "CodeIgniter\Database\MySQLi\MYSQLI_STORE_RESULT"
+in SYSTEMPATH/Database/Database.php on line 137.
+ 1 SYSTEMPATH/Database/Database.php(55): CodeIgniter\Database\Database->initDriver('MySQLi', 'Connection', [...])
+ 2 SYSTEMPATH/Database/Config.php(83): CodeIgniter\Database\Database->load([...], 'default')
+ 3 SYSTEMPATH/Validation/StrictRules/Rules.php(199): CodeIgniter\Database\Config::connect('default')
+ 4 SYSTEMPATH/Validation/Validation.php(311): CodeIgniter\Validation\StrictRules\Rules->is_unique('dizi@gmail.com', 'email', [...], null, 'email')
+ 5 SYSTEMPATH/Validation/Validation.php(197): CodeIgniter\Validation\Validation->processRules('email', 'email', 'dizi@gmail.com', [...], [...])
+ 6 SYSTEMPATH/Controller.php(152): CodeIgniter\Validation\Validation->run()
+ 7 APPPATH/Controllers/Auth.php(82): CodeIgniter\Controller->validate([...])
+ 8 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\Auth->registerAction()
+ 9 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+10 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-12-15 13:10:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-12-15 13:12:49 --> mysqli_sql_exception: Table 'cigniter4_monolith.admins' doesn't exist in /var/www/html/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:306
+Stack trace:
+#0 /var/www/html/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(306): mysqli->query('SELECT 1\nFROM `...', 0)
+#1 /var/www/html/vendor/codeigniter4/framework/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT 1\nFROM `...')
+#2 /var/www/html/vendor/codeigniter4/framework/system/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT 1\nFROM `...')
+#3 /var/www/html/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT 1\nFROM `...', Array, false)
+#4 /var/www/html/vendor/codeigniter4/framework/system/Validation/StrictRules/Rules.php(212): CodeIgniter\Database\BaseBuilder->get()
+#5 /var/www/html/vendor/codeigniter4/framework/system/Validation/Validation.php(311): CodeIgniter\Validation\StrictRules\Rules->is_unique('josua@gmail.com', 'email', Array, NULL, 'email')
+#6 /var/www/html/vendor/codeigniter4/framework/system/Validation/Validation.php(197): CodeIgniter\Validation\Validation->processRules('email', 'email', 'josua@gmail.com', Array, Array)
+#7 /var/www/html/vendor/codeigniter4/framework/system/Controller.php(152): CodeIgniter\Validation\Validation->run()
+#8 /var/www/html/app/Controllers/Auth.php(82): CodeIgniter\Controller->validate(Array)
+#9 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(942): App\Controllers\Auth->registerAction()
+#10 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#11 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 /var/www/html/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2023-12-15 13:12:49 --> Table 'cigniter4_monolith.admins' doesn't exist
+in SYSTEMPATH/Database/BaseConnection.php on line 647.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT 1
+FROM `admins`
+WHERE `email` = :email:
+ LIMIT 1', [...], false)
+ 2 SYSTEMPATH/Validation/StrictRules/Rules.php(212): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH/Validation/Validation.php(311): CodeIgniter\Validation\StrictRules\Rules->is_unique('josua@gmail.com', 'email', [...], null, 'email')
+ 4 SYSTEMPATH/Validation/Validation.php(197): CodeIgniter\Validation\Validation->processRules('email', 'email', 'josua@gmail.com', [...], [...])
+ 5 SYSTEMPATH/Controller.php(152): CodeIgniter\Validation\Validation->run()
+ 6 APPPATH/Controllers/Auth.php(82): CodeIgniter\Controller->validate([...])
+ 7 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\Auth->registerAction()
+ 8 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 9 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-12-15 13:14:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-15 13:14:51 --> key must be a string when using hmac
+in VENDORPATH/firebase/php-jwt/src/JWT.php on line 249.
+ 1 VENDORPATH/firebase/php-jwt/src/JWT.php(219): Firebase\JWT\JWT::sign('eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJJc3N1ZXIgb2YgdGhlIEpXVCIsImF1ZCI6IkF1ZGllbmNlIHRoYXQgdGhlIEpXVCIsInN1YiI6IlN1YmplY3Qgb2YgdGhlIEpXVCIsImlhdCI6MTcwMjY0NjA5MSwiZXhwIjoxNzAyNjQ5NjkxLCJlbWFpbCI6Impvc3VhQGdtYWlsLmNvbSJ9', false, 'HS256')
+ 2 APPPATH/Controllers/Auth.php(56): Firebase\JWT\JWT::encode([...], false, 'HS256')
+ 3 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\Auth->loginAction()
+ 4 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 5 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-12-15 13:17:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-15 13:17:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-15 13:17:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-15 13:17:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-15 13:19:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-15 13:19:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-15 13:19:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-15 13:19:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-15 13:20:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-15 13:20:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

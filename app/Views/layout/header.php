@@ -32,7 +32,7 @@
                                 <span>My Account</span>
                             </a>
                             <div class="cart-dropdown">
-                                <a href="/logout">Logout</a>
+                                <a href="/api/auth/logout">Logout</a>
                             </div>
                         </div>
                         <!-- /Account -->

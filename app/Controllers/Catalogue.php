@@ -22,4 +22,17 @@ class Catalogue extends BaseController
     {
         return view('history');
     }
+
+    public function detail($id)
+    {
+        helper('http');
+        $response = http_request('https://onlytrade-single-service-production.up.railway.app/api/barang/' . $id, null, null, "GET");
+        $data = $response['data'];
+
+        // Add perusahaan
+        $response = http_request('https://onlytrade-single-service-production.up.railway.app/api/perusahaan/' . $data['perusahaan_id'], null, null, "GET");
+        $data['perusahaan'] = $response['data']['nama'];
+
+        return view('detail', ['data' => $data]);
+    }
 }

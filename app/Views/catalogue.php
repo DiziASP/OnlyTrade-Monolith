@@ -35,7 +35,7 @@
 											</div>
 										</div>
 										<div class="add-to-cart">
-											<a href="#"><button class="add-to-cart-btn"><i class="fa fa-shopping-cart"></i> Purchase </button></a>
+											<a href="/detail/<?= $row['id'] ?>"><button class="add-to-cart-btn"><i class="fa fa-shopping-cart"></i> Purchase </button></a>
 										</div>
 									</div>
 								<?php endforeach; ?>
@@ -55,4 +55,5 @@
 	<!-- /container -->
 </div>
 <!-- /SECTION -->
+
 <?= $this->endSection(); ?>
