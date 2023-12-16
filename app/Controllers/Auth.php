@@ -31,13 +31,13 @@ class Auth extends BaseController
         $user = $userModel->where('email', $email)->first();
 
         if (is_null($user)) {
-            return $this->respond(['error' => 'Invalid username or password.'], 401);
+            return redirect()->to('/auth/login');
         }
 
         $pwd_verify = md5($password) == $user['password'];
 
         if (!$pwd_verify) {
-            return $this->respond(['error' => 'Invalid username or password.'], 401);
+            return redirect()->to('/auth/login');
         }
 
         $key = getenv('JWT_SECRET');
