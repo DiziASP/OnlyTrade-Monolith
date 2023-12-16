@@ -23,15 +23,15 @@
                         <i class="fa fa-star"></i>
                         <i class="fa fa-star"></i>
                     </div>
+                    <div class="header-search">
+                        <form method="post" action="/api/buy">
+                            <input type="hidden" id="price" name="price" value="<?= $data['price'] ?>">
+                            <input type="text" class="input" id="amount" name="amount" placeholder="Input Amount">
+                            <button class="search-btn" type="submit">Buy Now</button>
+                        </form>
+                    </div>
                 </div>
             </div>
-
-            <!-- Form -->
-            <form method="post" action="/api/buy">
-                <input type="hidden" id="price" name="price" value="<?= $data['price'] ?>">
-                <input type="text" id="amount" name="amount" placeholder="<?= $data['stock'] ?>">
-                <button class="add-to-cart-btn" type="submit">Buy Now</button>
-            </form>
         </div>
         <!-- /row -->
     </div>
